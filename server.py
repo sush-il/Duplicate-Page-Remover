@@ -2,14 +2,14 @@ import os
 from slideRemover import delete_duplicate_slides
 from flask import request, Blueprint, render_template, send_file
 
-views = Blueprint(__name__,"views")
+views = Blueprint(__name__,"views", url_prefix='/')
 
 @views.route('/')
 def home():
     return render_template("index.html");
 
 
-@views.route('/fileUpload', methods=('POST'))
+@views.route('/fileUpload', methods=['POST'])
 def fileUpload():
 
     if "fileUpload" not in request.files:
