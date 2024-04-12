@@ -26,7 +26,3 @@ def fileUpload():
     modifiedFilePath = delete_duplicate_slides(uploaded_file_path)
 
     return send_file(modifiedFilePath, as_attachment=True, download_name="modified_" + uploaded_file_path[2:], mimetype="application/pdf")
-
-
-if __name__ == '__main__':
-    app.run(port=5000, debug=True)
