@@ -14,7 +14,9 @@ Run `py server.py` to run the server
 
 Select Presentation File: PDF file from which you want to remove duplicate slides and submit.
 
-License
-Slide Deduplicator is licensed under the MIT License.
+### WHY ??
+The main reason for creating the system was due to difficulty in making notes when there were 100s of slides for a single lecture. 
+Each slide would be just one line and then another line would be added on the next slide making the note-taking process unnecessarily long.
+For one of the slides I was able to bring down the number of slides from **119** to **35** without loosing any content using the system. 
 
 ![image](https://github.com/sush-il/Duplicate-Page-Remover/assets/34659821/cf1d0820-4e8b-4931-ae1e-1d02b082720c)
