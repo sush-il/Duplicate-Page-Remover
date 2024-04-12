@@ -8,4 +8,5 @@ app.register_blueprint(home_blueprint, url_prefix="/")
 
 
 if __name__=='__main__':
-    app.run(debug=True,port=8000)
+    with app.app_context():
+        app.run(debug=True,port=8000)
