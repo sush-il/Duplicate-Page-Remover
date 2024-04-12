@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='./index.css') }}">
+    <title>Duplicate Sllide Remover</title>
+</head>
+<body>
+    <div class="text">
+        <h1> Duplicate Slide Remover</h1>
+        <p> 
+            Remove duplicate slide pages from your presentations. 
+            When you upload your presentation file, the system scans each slide to detect any duplicates based on content similarity. 
+            Once identified, duplicates are systematically removed. 
+            A modified version of the file will download automatically once submit button is clicked. 
+        </p>
+    </div>
+
+    <div class="container">
+        <form action="http://localhost:5000/fileUpload" method="POST" enctype="multipart/form-data">
+            <input type="file" name="fileUpload" accept=".pdf" multiple="false"/>
+            <button type="submit" /> Submit </button>
+        </form>
+    </div>
+</body>
+</html>
