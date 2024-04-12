@@ -9,7 +9,7 @@ def home():
     return render_template("index.html");
 
 
-@views.route('/fileUpload', methods=['POST'])
+@views.route('/fileUpload', methods=('POST'))
 def fileUpload():
 
     if "fileUpload" not in request.files:
