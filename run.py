@@ -8,3 +8,6 @@ app.register_blueprint(views, url_prefix="/")
 if __name__=='__main__':
     with app.app_context():
         app.run(debug=False)
+
+app.config['SERVER_NAME'] = 'https://duplicate-page-remover.onrender.com/'
+
