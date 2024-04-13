@@ -3,7 +3,7 @@ from server import views
 
 app = Flask(__name__)
 app.register_blueprint(views, url_prefix="/")
-app.config['SERVER_NAME'] = 'https://duplicate-page-remover.onrender.com/'
+app.config['SERVER_NAME'] = 'duplicate-page-remover.onrender.com/'
 
 #for deployment
 if __name__=='__main__':
